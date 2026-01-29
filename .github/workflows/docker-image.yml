@@ -1,0 +1,19 @@
+name:Docker 
+
+on:
+  push:
+    branches:["master"]
+  pull_request: 
+    branches:["master"]
+
+  jobs:
+    build:
+      runs-out:ubuntu-laster
+      stepS:
+      -uses:actions/checkout@v4
+      -name:Set up Docker Buildx
+      run:docker build .--file Dockerfile --tag my-imaga-name:$(date +%s)
+
+
+
+
