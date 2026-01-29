@@ -1,4 +1,4 @@
-name: Hot News Crawler
+docker-image.ymlname: Hot News Crawler
 
 on:
   schedule:
